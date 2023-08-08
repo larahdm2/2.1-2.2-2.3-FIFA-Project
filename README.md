@@ -1,11 +1,23 @@
 
 ![image](https://github.com/larahdm2/FIFA-Project/assets/138598135/7685c657-263a-4f08-8ebf-d510b0fc25f0)
 
-# Objective
+<details>
+  <summary>
+   <h2>Objective</h2>
+  </summary>
 
 This is a team project where we are required to generate a model that predicts the overal rating (OVR) of a FIFA game.
 
-# Description of the data
+  <br>
+  <hr> 
+
+</details>
+
+<details>
+  <summary>
+   <h2>Description of the data</h2>
+  </summary>
+</details>
 
 Based on our research and knowledge, the OVR is the summation of the player attributes and the international reputation: OVR = ATT + IR .
 
@@ -17,6 +29,13 @@ The percentage of attributes that are considered to calculate the OVR dependes o
 
 Our extract of data includes these attributes. Taking a quick look, we can notice some columns are the result of mathematical operations of others. For example, we think that the first number of those columns that follows the pattern "number+number" can be calculated from other columns.
 
+<br>
+<hr> 
+
+<details>
+  <summary>
+   <h2>Decisions</h2>
+  </summary>
 # Decisions
 
 The first decision we took was to extract the right number of the columns that contain "number+number", and discard the left number. We supposed (after a few operations) that the left number is the result of mathematical opperations from other columns we are keeping, and that the model will be able to learn.
@@ -27,3 +46,5 @@ Then, although we got some columns that were the sumation of others, and therefo
 With this information, we launched some draft calculations in python. We checked the correlation between our target and the variables. At first, we decided to discard those variables with little correlation to the model. But we checked how it affected to the model and we got a better result considering all the variables. 
 
 Finally, we introduced other variable that is not part of the main formula, but that we always had an intinct it could help the model. 
+<br>
+<hr> 
