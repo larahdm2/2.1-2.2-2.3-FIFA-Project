@@ -24,4 +24,6 @@ The first decision we took was to extract the right number of the columns that c
 Then, although we got some columns that were the sumation of others, and therefore less columns to play with; we decided to keep all the attributes because we believe they are valuable to learn the result of other columns. So, for example here, we decided to discard Attaking and keep the rest:
 ![image](https://github.com/larahdm2/FIFA-Project/assets/138598135/87de1b14-19f0-4f95-8abd-7b3d5d37adee)
 
+With this information, we launched some draft calculations in python. We checked the correlation between our target and the variables. At first, we decided to discard those variables with little correlation to the model. But we checked how it affected to the model and we got a better result considering all the variables. 
 
+Finally, we introduced other variable that is not part of the main formula, but that we always had an intinct it could help the model. 
